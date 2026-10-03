@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Vazirmatn:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#75ff9e", "on-background": "#e1e2eb", "on-tertiary": "#002e6a", "tertiary": "#dbe4ff", "background": "#10131a", "surface-container-highest": "#32353c", "on-secondary-fixed": "#2a1700", "surface-container": "#1d2026", "secondary-fixed": "#ffddb8", "on-surface-variant": "#bacbb9", "surface-container-high": "#272a31", "surface-bright": "#363940", "inverse-surface": "#e1e2eb", "on-secondary-fixed-variant": "#653e00", "on-tertiary-fixed-variant": "#004395", "outline": "#859585", "on-surface": "#e1e2eb", "tertiary-fixed-dim": "#adc6ff", "primary-container": "#00e676", "outline-variant": "#3b4a3d", "error-container": "#93000a", "inverse-on-surface": "#2e3037", "on-primary-container": "#00612e", "on-primary-fixed": "#00210b", "on-tertiary-container": "#0050ad", "surface-tint": "#00e475", "surface-container-lowest": "#0b0e14", "secondary-fixed-dim": "#ffb95f", "on-secondary-container": "#5b3800", "tertiary-container": "#b0c8ff", "secondary": "#ffb95f", "surface-dim": "#10131a", "on-error": "#690005", "on-primary": "#003918", "surface-variant": "#32353c", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#005226", "on-tertiary-fixed": "#001a42", "primary-fixed-dim": "#00e475", "secondary-container": "#ee9800", "surface-container-low": "#191c22", "inverse-primary": "#006d35", "surface": "#10131a", "error": "#ffb4ab", "on-secondary": "#472a00", "tertiary-fixed": "#d8e2ff", "primary-fixed": "#62ff96" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-md": "0.875rem", "gutter": "1rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-lg": "1.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-numeric-sm": ["JetBrains Mono"], "body-sm": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "label-numeric-lg": ["JetBrains Mono"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-numeric-md": ["JetBrains Mono"] }, "fontSize": { "headline-xl-mobile": ["30px", { "lineHeight": "40px", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "500" }], "label-numeric-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "16px", "fontWeight": "500" }], "label-numeric-lg": ["20px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "52px", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "42px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "700" }], "label-numeric-md": ["14px", { "lineHeight": "18px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low/95 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_4px_30px_rgba(0,0,0,0.7)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest/60"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #00e676
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XVjd__EYndjlOQI-apcKCLoQZbRhBKc5ZoaYdmULm0_J7MVpPZST4cdxZ1aeK1SInNoYTTnN4IfmopXnXFz7XU0OrMg08Xx_aAcBkz5Y0S2Lqu12LHGH1IBXr7Kl6UhRx66I5Jf4RLFudo4El8cQaORHO4JKxX5B5N9xGmgy4SFcHowLDOzfCzMVYnoo_KZwjzEp1dlAR6QP_e32e5aXH4cjRb63--MTGokMljJrfdoChiZ6gq9kDYI50"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-extrabold text-on-surface tracking-wide">PARSI BET</span><span class="font-caption text-caption text-primary">ADMIN CONSOLE</span></div></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-caption text-caption">پنل ارشد</span></div><nav class="flex flex-col gap-1 px-space-md py-space-md" data-active-classes="bg-surface-container-high text-primary font-bold"><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 rounded-lg transition-all bg-surface-container-high text-primary font-bold" data-path="dashboard" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">داشبورد جامع</span></div><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="matches-fixtures" href="#"><span class="material-symbols-outlined text-[20px]">sports_soccer</span><span class="font-body-md text-body-md">مدیریت مسابقات</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="sports-leagues" href="#"><span class="material-symbols-outlined text-[20px]">trophy</span><span class="font-body-md text-body-md">ورزش‌ها و لیگ‌ها</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="markets-odds" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">مارکت‌ها و ضرایب</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="users-balance" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">کاربران و موجودی دمو</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="bets-selections" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">شرط‌ها و برگه‌ها</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="activity-logs" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">گزارش‌ها و لاگ فعالیت</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings-security" href="#"><span class="material-symbols-outlined text-[20px]">shield_person</span><span class="font-body-md text-body-md">تنظیمات سیستم و امنیت</span></a></nav></div><div class="p-space-md bg-surface-container-lowest/80 flex flex-col gap-space-sm"><div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/60"><div class="flex items-center gap-2.5"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-low"></span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm font-semibold text-on-surface">مدیر ارشد سامانه</span><span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">Super Admin</span></div></div><span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption text-caption font-semibold">فعال</span></div><a class="flex items-center justify-center gap-2 w-full py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#"><span class="material-symbols-outlined text-[16px]">open_in_new</span><span>مشاهده سایت اصلی</span></a></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface-container-low/85 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_2px_12px_rgba(0,0,0,0.5)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">admin_panel_settings</span><span>مدیریت</span><span class="material-symbols-outlined text-[14px]">chevron_left</span><span class="text-on-surface font-semibold">داشبورد اصلی</span></div><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-high/70"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-caption text-caption text-secondary">Sandbox Active • ثبت تغییرات آنلاین</span></div></div><div class="flex items-center gap-space-md"><div class="relative w-80 hidden lg:block"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-lowest/80 text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-lg pr-9 pl-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="جستجوی کاربر، شناسه مسابقه یا تراکنش..." type="text"/></div><div class="hidden sm:flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container font-label-numeric-sm text-label-numeric-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">schedule</span><span dir="ltr">Tehran (UTC+3:30)</span></div><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-body-sm text-body-sm font-bold shadow-[0_0_12px_rgba(0,230,118,0.25)]"><span class="material-symbols-outlined text-[18px]">add</span><span>ایجاد مسابقه جدید</span></button><button class="relative p-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-numeric-sm text-[10px] flex items-center justify-center font-bold">3</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Notification & Sandbox Mode Ribbon -->
+<div class="px-space-margin-desktop py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-bold text-primary">محیط دمو و تست امن (Sandbox Production):</span>
+<span>تمام تراکنش‌ها مجازی بوده و بر پایه امتیازات آزمایشی (Demo PTS) پردازش می‌گردد.</span>
+</div>
+<div class="flex items-center gap-space-md font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">dns</span>
+<span>سرور تهران: پینگ ۱۸ میلی‌ثانیه</span>
+</span>
+<span class="text-surface-bright">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>اعتبارسنجی دو مرحله‌ای ادمین فعال</span>
+</span>
+</div>
+</div>
+<div class="p-space-margin-desktop flex flex-col gap-space-xl">
+<!-- Header Context & Quick Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold tracking-wider uppercase">سیستم یکپارچه ادمین v4.2</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption">نسخه وب‌سرویس مارکت ۲.۴</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-extrabold text-on-surface tracking-tight">
+          مرکز کنترل عملیات، مدیریت مسابقات و اعتبار دمو
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          سامانه اختصاصی مدیریت رویدادهای ورزشی زنده، مانیتورینگ بلادرنگ ضرایب شرط‌بندی، تنظیم مارکت‌ها و شارژ مستقیم حساب‌های دمو کاربران بدون درگاه بانکی.
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-all shadow-sm hover:shadow-md" onclick="document.getElementById('quick-balance-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<span>تخصیص سریع اعتبار دمو</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-all" onclick="document.getElementById('odds-config-card').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<span>میز تنظیم ضرایب ال‌کلاسیکو</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-bold transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>تعریف مسابقه یا تورنمنت</span>
+</button>
+</div>
+</div>
+<!-- 1. Top KPI Summary Cards (4 stats grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">کل کاربران فعال دمو</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-black" dir="ltr">4,892</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">کاربر تاییدشده</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/15 text-primary font-label-numeric-sm text-label-numeric-sm font-bold" dir="ltr">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+14.2%</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">افزایش ثبت‌نام طی هفته جاری</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">مسابقات فعال (In-Play و آتی)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-black" dir="ltr">128</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رویداد باز</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">sports_soccer</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-numeric-sm text-label-numeric-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>۶ مسابقه زنده و آنلاین</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">۱۲۲ رویداد پیش از بازی</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 62%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">مجموع اعتبار دمو در گردش</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-primary font-black" dir="ltr">38,450,000</span>
+<span class="font-caption text-caption text-primary font-bold">PTS دمو</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">toll</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">lock</span>
+<span>۱۰۰٪ شارژ اختصاصی توسط ادمین</span>
+</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface font-semibold" dir="ltr">۰ ریال واقعی</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md relative overflow-hidden flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">نرخ ثبت پیش‌بینی‌های دمو</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-label-numeric-lg text-label-numeric-lg text-on-surface font-black" dir="ltr">14,210</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">برگه امروز</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[26px]">receipt_long</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-numeric-sm text-label-numeric-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-primary">speed</span>
+<span>۹۸.۴٪ تسویه بدون تاخیر</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">میانگین ۲.۷ فرم/کاربر</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 71%"></div>
+</div>
+</div>
+</div>
+<!-- 2. Nav Tabs Bar -->
+<div class="flex items-center justify-between border-b-0 pb-1 overflow-x-auto">
+<div class="flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sports_soccer</span>
+<span>نمای کلی و مانیتورینگ مسابقات</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" onclick="document.getElementById('odds-config-card').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>مدیریت مارکت‌ها و ضرایب لحظه‌ای</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" onclick="document.getElementById('user-management-section').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>مدیریت کاربران و اعتبار دمو (PTS)</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-body-sm text-body-sm" onclick="document.getElementById('audit-log-section').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">security</span>
+<span>لاگ‌های امنیتی و حسابرسی</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-sm text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> ضرایب باز</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> معلق / در حال بازبینی</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-bright"></span> تسویه‌شده</span>
+</div>
+</div>
+<!-- 3. SECTION A: Matches & Fixtures Table -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<!-- Section Header & Filter Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">stadium</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">مدیریت و مانیتورینگ مسابقات زنده و آینده</h2>
+<span class="font-caption text-caption text-on-surface-variant">کنترل مستقیم وضعیت بازی، قفل و بازگشایی مارکت‌ها و ویرایش ضرایب سراسری</span>
+</div>
+</div>
+<!-- Filters Grid -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center rounded-lg bg-surface-container px-3 py-1.5">
+<span class="font-caption text-caption text-on-surface-variant ml-2">ورزش:</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option value="all">تمام ورزش‌ها</option>
+<option selected="" value="football">فوتبال (۱۱۲)</option>
+<option value="basketball">بسکتبال (۱۶)</option>
+</select>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container px-3 py-1.5">
+<span class="font-caption text-caption text-on-surface-variant ml-2">لیگ:</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option value="all">همه لیگ‌ها</option>
+<option selected="" value="laliga">لالیگا اسپانیا</option>
+<option value="epl">لیگ برتر انگلیس</option>
+<option value="seriea">سری آ ایتالیا</option>
+</select>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container px-3 py-1.5">
+<span class="font-caption text-caption text-on-surface-variant ml-2">وضعیت:</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option selected="" value="all">همه وضعیت‌ها</option>
+<option value="live">زنده (In-Play)</option>
+<option value="upcoming">برنامه‌ریزی‌شده</option>
+<option value="ended">پایان‌یافته</option>
+</select>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-bold shadow-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ مسابقه جدید</span>
+</button>
+</div>
+</div>
+<!-- Fixtures Table -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-caption text-caption uppercase tracking-wider">
+<th class="py-3 px-space-md">شناسه و عنوان رویداد</th>
+<th class="py-3 px-space-md">تورنمنت / لیگ</th>
+<th class="py-3 px-space-md">زمان / جریان بازی</th>
+<th class="py-3 px-space-md text-center">مارکت‌های فعال</th>
+<th class="py-3 px-space-md text-center">وضعیت ضرایب</th>
+<th class="py-3 px-space-md text-center">عملیات مدیریت</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: El Clasico (LIVE) -->
+<tr class="bg-surface-container/40 hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">#MT-4902</span>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+                      بارسلونا <span class="text-on-surface-variant text-[12px]">vs</span> رئال مادرید
+                    </span>
+<span class="font-caption text-caption text-on-surface-variant">ورزشگاه المپیک بارسلون</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-medium">لالیگا اسپانیا</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-error-container/70 text-error flex items-center gap-1 font-label-numeric-sm text-label-numeric-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>زنده: دقیقه ۳۴ (۱ - ۱)</span>
+</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-numeric-sm text-label-numeric-sm font-semibold">
+                  ۱۸ مارکت باز
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold">
+                  باز (Live Odds)
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-primary/20 hover:bg-primary text-on-surface hover:text-on-primary font-caption text-caption font-bold transition-all flex items-center gap-1" onclick="document.getElementById('odds-config-card').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>تنظیم ضرایب</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-secondary/20 text-secondary font-caption text-caption font-semibold transition-all">
+                    تعلیق موقت
+                  </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-caption text-caption transition-all">
+                    ثبت نتیجه
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Arsenal vs Chelsea (Upcoming) -->
+<tr class="bg-surface-container/20 hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">#MT-4903</span>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+                      آرسنال <span class="text-on-surface-variant text-[12px]">vs</span> چلسی
+                    </span>
+<span class="font-caption text-caption text-on-surface-variant">ورزشگاه امارات، لندن</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-medium">لیگ برتر انگلیس</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>فردا ۲۰:۰۰</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-numeric-sm text-label-numeric-sm font-semibold">
+                  ۱۲ مارکت
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption">
+                  برنامه‌ریزی‌شده
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-caption text-caption font-semibold transition-all">
+                    مدیریت مارکت
+                  </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-caption text-caption transition-all">
+                    تنظیم ضرایب اولیه
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Manchester City vs Liverpool (LIVE minute 75) -->
+<tr class="bg-surface-container/40 hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">#MT-4899</span>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+                      منچسترسیتی <span class="text-on-surface-variant text-[12px]">vs</span> لیورپول
+                    </span>
+<span class="font-caption text-caption text-on-surface-variant">ورزشگاه اتحاد</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-medium">لیگ برتر انگلیس</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary flex items-center gap-1 font-label-numeric-sm text-label-numeric-sm font-bold w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>زنده: دقیقه ۷۵ (۲ - ۱)</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-numeric-sm text-label-numeric-sm font-semibold">
+                  ۲۴ مارکت فعال
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-caption text-caption font-bold">
+                  بازبینی داوری (VAR)
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-caption text-caption font-semibold transition-all">
+                    ویرایش مارکت‌ها
+                  </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-error-container/40 text-error hover:bg-error-container font-caption text-caption font-bold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>قفل سریع</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Inter vs Juventus (Ended) -->
+<tr class="bg-surface-container/10 hover:bg-surface-container transition-colors opacity-80">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">#MT-4880</span>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface-variant flex items-center gap-1.5">
+                      اینتر میلان <span class="text-on-surface-variant text-[12px]">vs</span> یوونتوس
+                    </span>
+<span class="font-caption text-caption text-on-surface-variant">سن سیرو، میلان</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-medium text-on-surface-variant">سری آ ایتالیا</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-numeric-sm text-label-numeric-sm">
+                  پایان‌یافته (۲ - ۱)
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-caption text-caption text-on-surface-variant">۱۴ مارکت</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption">
+                  بسته شده
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>تسویه شرط‌ها: انجام شد (Settled)</span>
+</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 4. SECTION B & Bento Split: Odds Configuration & Demo Balance Management -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- SECTION B: Market & Odds Configuration Card (8 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-md" id="odds-config-card">
+<!-- Match Header In Odds Config -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">price_change</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">میز تنظیم لحظه‌ای ضرایب مسابقه</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-caption text-caption font-bold">زنده - دقیقه ۳۴</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">بارسلونا - رئال مادرید (لالیگا اسپانیا) • شناسه: #MT-4902</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-caption text-caption text-on-surface-variant">مارجین شبیه‌ساز:</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-numeric-sm text-label-numeric-sm font-bold" dir="ltr">4.80%</span>
+</div>
+</div>
+<!-- Dynamic Market Switcher Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-bold shadow-sm whitespace-nowrap">
+            برنده بازی 1X2
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm whitespace-nowrap">
+            مجموع گل Over/Under 2.5
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm whitespace-nowrap">
+            هردو تیم گل می‌زنند BTTS
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm whitespace-nowrap">
+            شانس مضاعف Double Chance
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm whitespace-nowrap">
+            نتیجه دقیق
+          </button>
+</div>
+<!-- Sub-table for 'برنده بازی (Match Winner)' -->
+<div class="flex flex-col gap-space-sm mt-2">
+<!-- Selection 1: Barcelona -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-bold text-on-surface font-label-numeric-md text-label-numeric-md">
+                1
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">انتخاب ۱: برد بارسلونا (میزبان)</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>احتمال تحلیلی: <strong class="text-on-surface font-label-numeric-sm" dir="ltr">34%</strong></span>
+<span>•</span>
+<span class="text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span> ضریب در حال رشد
+                  </span>
+</div>
+</div>
+</div>
+<!-- Odds Input & Quick Save -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-2 py-1 shadow-inner">
+<span class="font-caption text-caption text-on-surface-variant ml-2">ضریب:</span>
+<input class="w-16 bg-transparent text-primary font-label-numeric-lg text-label-numeric-lg font-bold text-center focus:outline-none" dir="ltr" id="odd-input-barca" type="text" value="2.65"/>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-bold transition-all shadow-sm" onclick="this.textContent = 'ذخیره شد!'; setTimeout(() =&gt; this.textContent = 'ثبت تغییر', 1800)">
+                ثبت تغییر
+              </button>
+<button class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-secondary hover:bg-surface-bright transition-all" title="تعلیق این انتخاب">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+</div>
+<!-- Selection X: Draw -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-bold text-on-surface font-label-numeric-md text-label-numeric-md">
+                X
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">انتخاب X: نتیجه مساوی</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>احتمال تحلیلی: <strong class="text-on-surface font-label-numeric-sm" dir="ltr">28%</strong></span>
+<span>•</span>
+<span>پایداری ضریب: نرمال</span>
+</div>
+</div>
+</div>
+<!-- Odds Input & Quick Save -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-2 py-1 shadow-inner">
+<span class="font-caption text-caption text-on-surface-variant ml-2">ضریب:</span>
+<input class="w-16 bg-transparent text-on-surface font-label-numeric-lg text-label-numeric-lg font-bold text-center focus:outline-none" dir="ltr" type="text" value="3.40"/>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-bold transition-all shadow-sm" onclick="this.textContent = 'ذخیره شد!'; setTimeout(() =&gt; this.textContent = 'ثبت تغییر', 1800)">
+                ثبت تغییر
+              </button>
+<button class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-secondary hover:bg-surface-bright transition-all" title="تعلیق این انتخاب">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+</div>
+<!-- Selection 2: Real Madrid -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-bold text-on-surface font-label-numeric-md text-label-numeric-md">
+                2
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">انتخاب ۲: برد رئال مادرید (مهمان)</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>احتمال تحلیلی: <strong class="text-on-surface font-label-numeric-sm" dir="ltr">38%</strong></span>
+<span>•</span>
+<span class="text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span> کاهش به دلیل گل مساوی
+                  </span>
+</div>
+</div>
+</div>
+<!-- Odds Input & Quick Save -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-2 py-1 shadow-inner">
+<span class="font-caption text-caption text-on-surface-variant ml-2">ضریب:</span>
+<input class="w-16 bg-transparent text-error font-label-numeric-lg text-label-numeric-lg font-bold text-center focus:outline-none" dir="ltr" type="text" value="2.45"/>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-bold transition-all shadow-sm" onclick="this.textContent = 'ذخیره شد!'; setTimeout(() =&gt; this.textContent = 'ثبت تغییر', 1800)">
+                ثبت تغییر
+              </button>
+<button class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-secondary hover:bg-surface-bright transition-all" title="تعلیق این انتخاب">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Global Odds Control Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-sm mt-auto bg-surface-container-high/40 p-space-md rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">sync</span>
+<span class="font-caption text-caption text-on-surface-variant">همگام‌سازی لحظه‌ای با وب‌سایت اصلی:</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-primary font-bold">فعال (Direct Push)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-error-container/60 hover:bg-error-container text-error font-body-sm text-body-sm font-bold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>قفل کردن تمام ضرایب این مسابقه</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-bold transition-all">
+              اعمال سراسری تغییرات
+            </button>
+</div>
+</div>
+</div>
+<!-- SECTION C: Demo Balance Adjustment Console (5 Columns) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-md" id="user-management-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">manage_accounts</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">مدیریت اعتبار دمو کاربران</h2>
+<span class="font-caption text-caption text-on-surface-variant">تنظیم و شارژ دستی موجودی دمو (بدون درگاه بانکی)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-caption text-caption font-semibold">تخصیص اختصاصی ادمین</span>
+</div>
+<!-- Strict Security Policy Notice Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-high/70 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-sm text-body-sm font-bold text-on-surface">ضوابط امنیتی پلتفرم آزمایشی:</span>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+              کاربران هیچ درگاه پرداختی ندارند و موجودی اولیه آن‌ها ۰ است. فقط مدیر سیستم مجاز به تخصیص یا کسر اعتبار دمو (PTS) می‌باشد.
+            </p>
+</div>
+</div>
+<!-- User Search Field -->
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container rounded-lg pr-9 pl-3 py-2 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="جستجوی کاربر با ایمیل یا شناسه (#USR)..." type="text"/>
+</div>
+<!-- User List for Balance Adjustment -->
+<div class="flex flex-col gap-space-sm">
+<!-- User Row 1 (Arash) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold font-label-numeric-sm">
+                  AT
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface font-body-sm text-body-sm">آرش تهرانی</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant" dir="ltr">#USR-8821</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-label-numeric-sm" dir="ltr">arash.t@example.com</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold" dir="ltr">1,500 PTS</span>
+<span class="font-caption text-caption text-on-surface-variant">موجودی دمو</span>
+</div>
+</div>
+<!-- Quick Inline Operation for USR-8821 -->
+<div class="p- space-sm rounded-lg bg-surface-container-lowest/80 p-2.5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">add_circle</span> شارژ سریع حساب این کاربر:
+                </span>
+<span class="font-caption text-caption text-secondary">پاداش تستر بتا</span>
+</div>
+<div class="flex items-center gap-2">
+<input class="flex-1 bg-surface-container text-on-surface font-label-numeric-sm text-label-numeric-sm px-3 py-1.5 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" dir="ltr" id="demo-amount-input" placeholder="مقدار اعتبار (مثلاً 500)" type="number" value="500"/>
+<button class="px-space-md py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-bold transition-all shadow-sm" onclick="showToast('موجودی کاربر #USR-8821 به میزان ۵۰۰ PTS با موفقیت افزایش یافت.')">
+                  شارژ آنی
+                </button>
+</div>
+</div>
+</div>
+<!-- User Row 2 (Sara) -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold font-label-numeric-sm">
+                SR
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface font-body-sm text-body-sm">سارا رضایی</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant" dir="ltr">#USR-7104</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-label-numeric-sm" dir="ltr">sara_r@demo.com</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex flex-col items-end">
+<span class="font-label-numeric-md text-label-numeric-md text-error font-bold" dir="ltr">0 PTS</span>
+<span class="font-caption text-caption text-on-surface-variant">موجودی اولیه</span>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-caption text-caption font-bold transition-all flex items-center gap-1" onclick="showToast('شارژ اولیه ۱,۰۰۰ PTS برای سارا رضایی اعمال گردید.')">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>+ شارژ اولیه 1,000 PTS</span>
+</button>
+</div>
+</div>
+<!-- User Row 3 (Blocked) -->
+<div class="p-space-md rounded-xl bg-surface-container/60 flex items-center justify-between gap-space-sm opacity-75">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold font-label-numeric-sm">
+                #
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface font-body-sm text-body-sm">کاربر آزمایشی ۹۹۴۰</span>
+<span class="px-2 py-0.5 rounded bg-error-container/50 text-error font-caption text-caption">مسدود امنیتی</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-label-numeric-sm" dir="ltr">#USR-9940</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface-variant font-caption text-caption">
+                رفع انسداد
+              </button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-caption text-caption">
+                بررسی تخلف
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. SECTION D: Security & Activity Audit Log -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-md" id="audit-log-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">policy</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">لاگ امنیتی فعالیت‌های مدیر سامانه (Security Audit Stream)</h2>
+<span class="font-caption text-caption text-on-surface-variant">ردگیری تغییرات ضرایب، شارژ حساب‌های دمو و قفل‌های امنیتی به صورت آنی</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">آخرین دریافت لاگ: ۱ ثانیه پیش</span>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Audit Stream List -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Log Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold">تغییر ضریب مسابقه</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">لحظاتی پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+            تغییر ضریب برد بارسلونا از <span class="font-label-numeric-sm text-on-surface-variant">2.60</span> به <strong class="text-primary font-label-numeric-sm">2.65</strong> در رویداد ال‌کلاسیکو.
+          </p>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>توسط: <strong class="text-on-surface">SuperAdmin</strong></span>
+<span class="font-label-numeric-sm" dir="ltr">IP: 192.168.1.1</span>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-caption text-caption font-bold">شارژ موجودی دمو</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">۵ دقیقه پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+            تخصیص <strong class="text-secondary font-label-numeric-sm">1,000 PTS</strong> اعتبار دمو به کاربر <span class="font-bold text-on-surface">#USR-8821</span> (علت: تستر بتا).
+          </p>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>توسط: <strong class="text-on-surface">SuperAdmin</strong></span>
+<span class="text-primary font-bold">تایید سیستمی</span>
+</div>
+</div>
+<!-- Log Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary-fixed-dim font-caption text-caption font-bold">مارکت جدید</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">۱۵ دقیقه پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+            ایجاد مارکت تحلیلی جدید <strong class="text-on-surface">«کرنر بالای ۹.۵»</strong> برای نیمه دوم مسابقه ال‌کلاسیکو.
+          </p>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>شناسه: <strong class="font-label-numeric-sm">#MKT-901</strong></span>
+<span class="text-primary">وضعیت: فعال</span>
+</div>
+</div>
+<!-- Log Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-error-container/50 text-error font-caption text-caption font-bold">قفل اضطراری</span>
+<span class="font-label-numeric-sm text-label-numeric-sm text-on-surface-variant">۱ ساعت پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+            قفل شدن خودکار و امنیتی مارکت‌ها در دقیقه ۹۰ بازی منچسترسیتی به دلیل خطای داوری.
+          </p>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>محرک: <strong class="text-on-surface">ماژول اتوماتیک</strong></span>
+<span class="text-secondary font-bold">بررسی مجدد</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal: Quick Balance Allocation Popout -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-md" id="quick-balance-modal">
+<div class="w-full max-w-lg rounded-2xl bg-surface-container-low p-space-xl shadow-2xl flex flex-col gap-space-lg relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">فرم تخصیص رسمی اعتبار دمو (PTS)</h3>
+<span class="font-caption text-caption text-on-surface-variant">شارژ آزمایشی مستقیم کیف‌پول کاربران</span>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="document.getElementById('quick-balance-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container text-on-surface-variant font-caption text-caption flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">info</span>
+<span>این اعتبار صرفاً امتیاز دمو (PTS) بوده و فاقد ارزش پولی ریالی است.</span>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); document.getElementById('quick-balance-modal').classList.add('hidden'); showToast('اعتبار دمو با امضای امنیتی ادمین به کاربر اختصاص یافت.');">
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">شناسه یا ایمیل کاربر مورد نظر:</label>
+<input class="w-full bg-surface-container rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" type="text" value="#USR-8821 (آرش تهرانی)"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">مقدار اعتبار دمو برای افزودن:</label>
+<div class="relative">
+<input class="w-full bg-surface-container rounded-lg pr-3 pl-14 py-2 text-primary font-label-numeric-lg text-label-numeric-lg font-bold focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" dir="ltr" type="number" value="1000"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-caption text-caption text-on-surface-variant font-bold">PTS دمو</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface">علت تخصیص اعتبار (جهت ثبت در لاگ امنیتی):</label>
+<select class="w-full bg-surface-container rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option value="beta-tester">پاداش تست نسخه بتا / مسابقه آزمایشی</option>
+<option value="initial-grant">شارژ اولیه کاربر جدید (ثبت‌نام دمو)</option>
+<option value="campaign">پاداش جشنواره پیش‌بینی جام ملت‌ها</option>
+<option value="correction">اصلاح سیستمی مانده حساب</option>
+</select>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium" onclick="document.getElementById('quick-balance-modal').classList.add('hidden')" type="button">
+            انصراف
+          </button>
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-bold transition-all shadow-lg shadow-primary/20" type="submit">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>شارژ آنی موجودی دمو (امضای ادمین)</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Placeholder -->
+<div class="hidden fixed bottom-6 left-6 z-50 p-space-md rounded-xl bg-surface-bright text-on-surface shadow-2xl flex items-center gap-3" id="admin-toast">
+<div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface" id="toast-text">عملیات با موفقیت انجام شد.</span>
+</div>
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('admin-toast');
+      const text = document.getElementById('toast-text');
+      if (toast && text) {
+        text.textContent = message;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3200);
+      }
+    }
+  </script>
+</div></main></div></body></html>
